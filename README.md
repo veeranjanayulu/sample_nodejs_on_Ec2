@@ -6,15 +6,15 @@ Great for testing simple deployments on Cloud
 
 ## Step 1: Install NodeJS and NPM using nvm
 Install node version manager (nvm) by typing the following at the command line.
-
+sudo yum install curl -y
 ```bash
 sudo su -
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
 Activate nvm by typing the following at the command line.
 
 ```bash
-. ~/.nvm/nvm.sh
+source ~/.bash_profile
 ```
 
 Use nvm to install the latest version of Node.js by typing the following at the command line.
@@ -34,8 +34,8 @@ npm -v
 To install git, run below commands in the terminal window:
 
 ```bash
-sudo apt-get update -y
-sudo apt-get install git -y
+
+yum install git -y
 ```
 
 Just to verify if system has git installed or not, please run below command in terminal:
@@ -48,7 +48,7 @@ This command will print the git version in the terminal.
 Run below command to clone the code repository from Github:
 
 ```bash
-git clone https://github.com/yeshwanthlm/nodejs-on-ec2.git
+git clone <url>
 ```
 
 Get inside the directory and Install Packages
